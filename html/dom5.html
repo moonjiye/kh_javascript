@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Node</title>
+</head>
+<body>
+    <form action="#" name="frm">
+        <input type="text" name="id">
+        <input type="password" name="pw">
+    </form>
+    <form action="#">
+        <label for="apple"><input type="radio" name="fruits" id="apple" value="apple">사과</label>
+        <label for="banana"><input type="radio" name="fruits" id="banana" value="banana">바나나</label>
+        <label for="orange"><input type="radio" name="fruits" id="orange" value="orange">오렌지</label>
+        <label for="melon"><input type="radio" name="fruits" id="melon" value="melon">멜론</label>
+    </form>
+    
+    <script>
+        // const aEl = document.createElement("a"); // 생성
+        // document.body.appendChild(aEl); // 연결
+        // aEl.setAttribute("href", "https://naver.com");
+        // aEl.innerHTML = "a태그 추가";
+        document.frm.id.value = "곰돌이";
+        document.frm.pw.value = "sphb8250";
+        const ckEls = document.querySelectorAll("[type='checkbox']");
+        for(let i = 0; i < ckEls.length; i++){
+            if(optionEls[i].value === 'banana'){
+                optionEls[i].selected = true;
+            }
+        }
+    </script>
+</body>
+</html>
