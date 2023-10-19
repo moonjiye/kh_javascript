@@ -10,7 +10,7 @@ function newRegister() {
     const items = document.querySelectorAll("li");
     for (i = 0; i < items.length; i++) {
         items[i].addEventListener("click", function() {
-            if(this.parentNode) { // 부모 노드가 있다면
+            if(this.parentNode) { // 부모 노드가 있다면,현재 이벤트가 발생한 것이 this
                 this.parentNode.removeChild(this); // 부모 노드에서 삭제
             }
         });       

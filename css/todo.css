@@ -5,6 +5,7 @@
     width:500px;
     margin:20px auto;
     padding:20px;
+    background-color: yellowgreen;
   }
   input[type="text"] {
     width:370px;
@@ -20,7 +21,6 @@
     color:#fff;
     border:none;
   }
-  hr { clear:both; display:none; }
-  ul { list-style:none;  background-color: lightgray;}
+  ul { list-style:none;background-color: #eee;}
   li { line-height: 3; }
   li:hover { cursor:pointer;}
