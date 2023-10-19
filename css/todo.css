@@ -21,6 +21,6 @@
     border:none;
   }
   hr { clear:both; display:none; }
-  ul { list-style:none; padding-top:50px;}
-  li { line-height: 2.5; }
+  ul { list-style:none;  background-color: lightgray;}
+  li { line-height: 3; }
   li:hover { cursor:pointer;}
