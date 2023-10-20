@@ -1,6 +1,6 @@
 #item {
-    position:relative;
-    width:500px;
+    position:relative; /* 상대적인 위치에서 움직이려면 설정을 해야함 */
+    width:auto;
     height:auto;
     padding:15px 20px;
     margin:auto;
@@ -12,7 +12,7 @@ button {
     font-size:0.8em;			
 }
 .over {
-    position:absolute;
+    position:absolute; /* 부모에 대한 상대좌표 */
     left:30px;
     bottom:30px;
 }

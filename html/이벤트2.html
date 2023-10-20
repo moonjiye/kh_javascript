@@ -1,64 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>자바 스크립트 이벤트</title>
-  <style>
-    #conrainer {
-    display: flex;
-    justify-content: center;
-	}
-	* {
-	    margin: 0;
-	    padding: 0;
-    }
-	.box {
-	    width: 140px;
-	    height: 40px;
-	    flex-wrap: wrap;
-	    margin: 4px;
-	    color : white;
-	    font-weight: bold;
-	    display: flex;
-	    justify-content: center;
-	    align-items: center;
-	}
-    .green {
-      background-color: green;
-      color: white;
-      font-weight: bold;
-    }
-    .orange {
-      background-color: orange;
-      color: white;
-      font-weight: bold;
-    }
-    .purple {
-      background-color: purple;
-      color: white;
-      font-weight: bold;
-    }
-    #result {
-	    width: 500px;
-	    height: 300px;
-	    margin: 30px auto;
-	    border: 2px solid #ccc;
-	    border-radius: 15px;
-	}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>button</title>
+    <style>
+        #container {
+            display: flex;
+            width: 500px;
+            margin: 10px auto;
+        }
+        .btn{
+            margin: 2px;
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            border: 1px solid #ccc;
+            padding: 10px 16px;
+            border-radius: 2px;
+        }
+        .green{
+            background-color: green;
+            color: #fff;
+        }
+        .orange {
+            /* flex-grow: 2; */
+            background-color: orange;
+            color: #fff;
+        }
+        .purple {
+            background-color: purple;
+            color: #fff;
+        }
+        #color-box{
+            width: 100%;
+            height: 300px;
+            border-radius: 10px;
+            border: 2px solid #ccc;
+        }
+    </style>
 </head>
 <body>
-    <div id="conrainer">
-        <p class="box green" onclick="changeBg('green')">Green</p>
-        <p class="box orange" onclick="changeBg('orange')">Orange</p>
-        <p class="box purple" onclick="changeBg('purple')">Purple</p>
+    <div id="container">
+        <div class="btn green" onclick="changeBG('green')">green</div>
+        <div class="btn orange" onclick="changeBG('orange')">orange</div>
+        <div class="btn purple" onclick="changeBG('purple')">purple</div>
     </div>
-    <div id="result"></div>
-	<script>
-		function changeBg(color) {
-			const result = document.querySelector('#result');
+    <div id="color-box"></div>
+    <script>
+        // const btns = document.querySelectorAll(".btn");
+        // for(let i = 0; i < btns.length; i++) {
+        //     btns[i].addEventListener("click", function(){
+        //         alert(`${this.textContent} 버튼이 눌러졌습니다.`); 
+        //         // 이벤트가 발생했을때 함수를 불러주는 '콜백함수' 동적바인딩이 일어나는 함수
+        //         // 이벤트가 불려지는 곳이 this.
+        //     });
+        // }
+        function changeBG(color) {
+            const result = document.querySelector('#color-box');
 			result.style.backgroundColor = color;
-		}
-	</script>
+        }
+    </script>
 </body>
 </html>
